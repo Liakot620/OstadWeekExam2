@@ -14,7 +14,7 @@ class ProfileController extends Controller
             "name"=> $name,
             "age"=> $age
         ];
-        $name = "access_token";
+        $cokie_name = "access_token";
         $value = "123-XYZ";
         $minutes = 1; 
         $path = "/";
@@ -22,7 +22,7 @@ class ProfileController extends Controller
         $secure = false; 
         $httpOnly = true;
         return response($data,200)->cookie(
-        $name,
+        $cokie_name,
                 $value,
                 $minutes,
                 $path,
